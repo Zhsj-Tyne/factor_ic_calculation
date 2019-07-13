@@ -103,35 +103,10 @@ class IC_Analyzer(object):
         self.__stock_tab[new_col] = est.resid
         print(est.summary())
         return new_col
-        # st, data, ss2 = summary_table(res, alpha=0.05)
+
         # fig, ax = plt.subplots(figsize=(8, 6))
         # ax.plot(x, y, 'o', label="data")
         # ax.plot(x, est.fittedvalues, 'r--.', label="OLS")
         # ax.legend(loc='best')
         # plt.show()
         # print(self.__stock_tab)
-
-        #print(industry)
-
-
-    #因子计算
-
-    #     """因子 IC 分析
-    #
-    #     参数:
-    #     group_adjust:
-    #     - True: 按行业对因子收益去均值后求得因子收益表
-    #     - False: 因子收益表
-    #     by_group:
-    #     - True: 画按行业分组信息比率(IC)图
-    #     - False: 画月度信息比率(IC)图
-    #     """
-    #     self.plot_ic_ts(group_adjust=group_adjust, method=None)
-    #     pl.plt.show()
-    #     self.plot_ic_qq(group_adjust=group_adjust)
-    #     pl.plt.show()
-    #     if by_group:
-    #         self.plot_ic_by_group(group_adjust=group_adjust, method=None)
-    #     else:
-    #         self.plot_monthly_ic_heatmap(group_adjust=group_adjust)
-    #     pl.plt.show()
